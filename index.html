@@ -1,9 +1,210 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>コンテンツ1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="たくさんのウェブサービスやゲームなどのコンテンツを所有する 遊びサーチ公式ホームページ">
+	<meta name="keywords" content="遊び, ホームページ,ウェブサービス,ゲーム,遊びサーチ,Youtube,Twitter">
+	<title>遊びサーチホームページ</title>
+	<link rel="icon" type="image/png" href="img/favicon.ico">
+
 </head>
-<body>testtesttest</body>
+<body>
+	<div class="center-box">
+		<header>
+			<h1 class="asobisarch-text"><span id="aso">遊</span>びサーチ公式</h1>
+			<nav class="pc-nav">
+				<a href="#web-go">
+					<div class="nav-box">
+						<img src="img/website.png">
+						<li>
+							Webサービス
+						</li>
+					</div>
+				</a>
+				<a href="#game-go">
+					<div class="nav-box">
+							<img src="img/game.png">
+						<li>
+							ゲーム
+						</li>
+					</div>
+				</a>
+				<a href="#youtube_box">
+					<div class="nav-box">
+						<img src="img/videos.png">
+						<li>
+							Youtube
+						</li>
+					</div>
+				</a>
+				<a href="#twitter_box">
+					<div class="nav-box">
+							<img src="img/twitter.png">
+
+						<li>
+							Twitter
+						</li>
+					</div>
+				</a>
+			</nav>
+			<nav class="smart-nav">
+		     <div class="cp_offcm01">
+		          <input type="checkbox" id="cp_toggle01">
+		          <label for="cp_toggle01" id="home_label">
+		            <span id="home_span"></span>
+		          </label>
+		          <div class="cp_menu">
+		            <ul>
+		              <li>
+		              	<a href="#web-go">
+		              		Webサービス
+		              	</a>
+		              </li>
+		              <li>
+		              	<a href="#game-go">
+		              		ゲーム
+		              	</a>
+		              </li>
+		              <li>
+		              	<a href="#youtube_box">
+		              		Youtube
+		              	</a>
+		              </li>
+		              <li>
+		              	<a href="#twitter_box">
+		              		Twitter
+		              	</a>
+		              </li>
+		            </ul>
+		          </div>
+		        </div>
+			</nav>
+		</header>
+		<div class="image-back">
+			<h1 id="asobisarch-use-text"><s1>サ</s1><s1>ー</s1><s1>ビ</s1><s1>ス</s1><s1>を</s1><s1>駆</s1><s1>使</s1><s1>し</s1><s1>て</s1><s1>、</s1><s1>楽</s1><s1>し</s1><s1>も</s1><s1>う</s1></h1>
+		</div>
+
+	<div class="centers-content-box">
+		<h1 class="web_service_all_text" id="web-go">ウェブサービス一覧</h1>
+		
+		<div id="web_service_box">
+			<div class="margin-space-box">
+				<a href="https://asobisarchapp.herokuapp.com" target="_blank">
+					<div class="asobisarch_box webbox">
+						<h1 class="asobisarchText webname">遊びサーチ</h1>
+						<img src="img/asobisarch.png" class="image-width-one-handred">
+						<p class="bottom-text">遊びを共有しあうサービス</p>
+					</div>
+				</a>
+			</div>
+			<div class="margin-space-box">
+				<a href="https://oretube.herokuapp.com" target="_blank">
+					<div class="oretube_box webbox">
+						<h1 class="webname oretubeText">おれtube</h1>
+						<img src="img/oretube.png" class="image-width-one-handred">
+						<p class="bottom-text">好きなYoutube動画を共有しあうサービス</p>
+					</div>
+				</a>
+			</div>
+			<div class="margin-space-box">
+				<a href="https://identweb.herokuapp.com" target="_blank">
+					<div class="identweb_box webbox">
+						<h1 class="webname oretubeText">IdentWeb</h1>
+						<img src="img/identweb.png" class="image-width-one-handred">
+						<p class="bottom-text">ウェブサービスのアイディアを共有しあうサービス</p>
+					</div>
+				</a>
+			</div>
+			<div class="margin-space-box" id="good-chat-margin-box">
+				<a href="https://good-chat.herokuapp.com" target="_blank">
+					<div class="goodchat_box webbox">
+						<h1 class="webname oretubeText">GoodChat</h1>
+						<img src="img/goodchat.png" class="image-width-one-handred">
+						<p class="bottom-text">アカウントがなくてもチャットができるサービス</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<h1 class="web_service_all_text" id="game-go">ゲーム一覧</h1>
+		<div id="web_service_box">
+			<div class="margin-space-box">
+				<a href="https://htmljsgit.github.io/webglUnity2DGame/" target="_blank" id="game_box">
+					<div class="webbox gamebox">
+						<h1 class="webname oretubeText">ただの2DRPG</h1>
+						<img src="img/game1.png" class="image-width-one-handred">
+						<p class="bottom-text">まだUnity初心者のころにつくったゲーム</p>
+					</div>
+				</a>
+			</div>
+			<div class="margin-space-box">
+				<a href="https://htmljsgit.github.io/sanbugame/" target="_blank" id="game_box">
+					<div class="webbox gamebox">
+						<h1 class="webname oretubeText">Sanb戦</h1>
+						<img src="img/game2.png" class="image-width-one-handred">
+						<p class="bottom-text">ちょっと強いSanbとの戦いを描いたゲーム</p>
+					</div>
+				</a>
+			</div>
+			<div class="margin-space-box">
+				<a href="https://htmljsgit.github.io/Unity2D-/" target="_blank" id="game_box">
+					<div class="webbox gamebox">
+						<h1 class="webname oretubeText">ただの2DRPG2</h1>
+						<img src="img/game3.png" class="image-width-one-handred just-image">
+						<p class="bottom-text">まだUnity初心者のころにつくったゲーム2つめ</p>
+					</div>
+				</a>
+			</div>
+			<div class="margin-space-box">
+				<a href="https://unityroom.com/games/run_away_from_dinasaur" target="_blank" id="game_box">
+					<div class="webbox gamebox">
+						<h1 class="webname oretubeText">Run away from dinasaur(恐竜から逃げろ)</h1>
+						<img src="img/game4.png" class="image-width-one-handred just-image">
+						<p class="bottom-text">まだUnity初心者のころにつくったゲーム2つめ</p>
+					</div>
+				</a>
+			</div>
+		</div>
+			<h1 class="web_service_all_text" id="youtube_box">Youtubeチャンネル</h1>
+			<div id="web_service_box">
+				<div class="margin-space-box">
+					<a href="https://www.youtube.com/channel/UCfqvt18D9iDvt9EfkLZM_3Q" target="_blank" id="game_box">
+						<div class="webbox gamebox">
+							<h1 class="webname oretubeText">クロLife</h1>
+							<img src="img/kurolife.png" class="image-width-one-handred youtube_img">
+							<p class="bottom-text">ゲームプレイなどを載せているYoutubeチャンネル</p>
+						</div>
+					</a>
+				</div>	
+				<div class="margin-space-box">
+					<a href="https://www.youtube.com/channel/UCfqvt18D9iDvt9EfkLZM_3Q" target="_blank" id="game_box">
+						<div class="webbox gamebox">
+							<h1 class="webname oretubeText">遊びサーチ公式</h1>
+							<img src="img/asobisarchchar.png" class="image-width-one-handred youtube_img">
+							<p class="bottom-text">ウェブサービスについての情報Youtubeチャンネル</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+			<h1 class="web_service_all_text" id="twitter_box">Twitter</h1>
+			<div id="web_service_box">
+				<div class="margin-space-box">
+					<a href="https://twitter.com/Kuro_on_Rails" target="_blank" id="game_box">
+						<div class="webbox gamebox">
+							<h1 class="webname oretubeText">クロLife</h1>
+							<img src="img/kurolife.png" class="image-width-one-handred youtube_img">
+							<p class="bottom-text">プログラミングのことをつぶやきまくるアカウント</p>
+						</div>
+					</a>
+				</div>	
+			</div>		
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="main.js"></script>
+</body>
 </html>

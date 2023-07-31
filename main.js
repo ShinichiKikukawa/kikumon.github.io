@@ -20,6 +20,6 @@ $(function(){
 			} else {
 				clearInterval(intervalId);
 			}
-		}, 100);	
+		}, 100);
 	}
 });

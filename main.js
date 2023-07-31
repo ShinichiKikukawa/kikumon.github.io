@@ -7,23 +7,18 @@ $(function(){
 		$('html,body').animate({scrollTop: position}, speed, "swing");
 		return false;
 	});
-	var asobisarch_text = get_d("asobisarch-use-text");
-	word_list(asobisarch_text.textContent);
-	function get_d(name){
-		return document.getElementById(name);
-	}
-	function get_t(name){
-		return document.getElementsByTagName(name);
-	}
-	function word_list(name){
-		var s1_all = get_t("s1");
-		var score = -1;
-			setInterval(function(){
-				if(score <= 12){
-					score++;
-					s1_all[score].style.opacity = "1";
-				}
-			}, 100);	
-	}
 
+	word_list("kikumon-use-text1");
+	word_list("kikumon-use-text2");
+
+	function word_list(id){
+		var s1_all = document.getElementById(id).children;
+		var score = -1;
+		setInterval(function(){
+			if(score < s1_all.length - 1){
+				score++;
+				s1_all[score].style.opacity = "1";
+			}
+		}, 100);
+	}
 });

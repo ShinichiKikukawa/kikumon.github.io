@@ -8,10 +8,11 @@ nav li{
 nav{
 
 }
-s1{
-	opacity: 0;
-
+s1 {
+  opacity: 0;
+  transition: opacity 0.3s;
 }
+
 #kikumon-use-text1{
 
 }
